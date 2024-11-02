@@ -1,0 +1,260 @@
+/*global*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+p{
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3{
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+
+/* header */
+.site-header {
+    background-image: url(./img/header.jpg);
+    height: 400px;
+    background-size: cover ;
+    background-position: top right;
+    color: lightblue;
+}
+
+.site-header a {
+    color: lightblue;
+    padding-right: 30px;
+}
+
+.bar-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* about */
+.about-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* houses */
+.houses-main-container {
+    display: flex;
+}
+
+.houses-container{
+    display: flex;
+}
+.houses-item{
+    background-color: tan;
+    margin-right: 10px;
+}
+.houses-item-img{
+    width:100%;
+    height: auto;
+
+}
+.houses-item-text{
+    padding: 20px;  
+}
+.price{
+    color:steelblue;
+    font-weight: bold;
+    font-size: 30px;
+}
+.icon-container{
+    display: flex;
+    /* justify-content: center;    
+    width:20px;
+    padding:10px;
+    margin-right:20px; */
+    
+}
+.icon-container img{
+    margin-right: 20px;
+}
+.icons-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* utilities */
+.btn {
+    display: block;
+    background-color: orchid;
+    color:white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* contact */
+.contact-header {
+    background-color: orange;
+    height: 150px;
+    color: black;
+}
+
+.contact-header a {
+    color: black;
+}
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-container {
+    background-color: #DEDEDE;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 16px;
+}
+
+fieldset {
+    justify-content: flex-start;
+    border: 1px solid gray;
+    background-color: #DEDEDE;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer-container {
+    justify-content: space-around;
+    row-gap: 5px;
+}
+
+/* form-container */
+.form-container {
+    background-color: #DEDEDE;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+legend {
+    font-size: 12px;
+}
+
+fieldset {
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 10px;
+
+    border: solid 1px gray;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control input,
+.form-control textarea {
+    border: none;
+    width: 70%;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.form-control label {
+    display: inline-block;
+    width: 150px;
+
+}
+
+footer { background-color:  #DEDEDE;}
+
+* Footer styles */
+    .footer {
+    background-color: #333;
+    color: tan;
+    \padding: 20px 0;
+    \text-align: center;
+    position: relative;
+    }
+    .footer p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #aaa;
+    }
+    .footer-links {
+        list-style: none;
+        padding: 10px 0;
+    }
+
+    footer-links li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    .footer-links a {
+        color: orchid;
+        text-decoration: none;
+        font-size: 15px;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+    .social-icons a {
+        color: #f57c00;
+        margin: 0 10px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .social-icons a:hover {
+        color: #ffbb33;
+    }
+    
+    /* MOBILE FIRST */
+/* @media (min-width: <value>px) {} */
+@media (min-width:350px) {
+    body {
+        background-color: gold;
+        color: black;
+    }
+}
+@media (min-width: 350px) {
+    .header {
+        background-color: purple;
+        text-align: center;
+
+    }
+}
+
+@media (min-width: 350px) {
+    .aside-left {
+        display: none;
+    }
+}
